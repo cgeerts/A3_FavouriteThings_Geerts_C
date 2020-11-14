@@ -1,6 +1,6 @@
 # Favourite Things
 
-This project demonstrates the usage of a database to
+This project demonstrates the usage of a database to<br>
 fetch information from and display on a page.
 
 ## Roadmap
