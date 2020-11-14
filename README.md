@@ -1,6 +1,5 @@
-# Geerts_C_A3_FavouriteThings
+# Favourite Things
 
-# Favourite Things Page
 This project demonstrates the usage of a database to
 fetch information from and display on a page.
 
