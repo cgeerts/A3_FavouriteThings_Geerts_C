@@ -9,6 +9,8 @@ import { fetchData, postData } from "./modules/DataMiner.js";
     //     })
     //     .catch((error) => console.log(error));
     // stub * just a place for non-component-specific stuff
+
+    const lightbox = document.querySelector(".lightbox-con")
     
     function popErrorBox(message) {
         alert(message);
@@ -31,6 +33,17 @@ import { fetchData, postData } from "./modules/DataMiner.js";
             // add this new user to the view
             userSection.appendChild(currentUser);
         }
+    }
+
+    function closeLightbox(event) {
+        lightbox.classList.toggle("lightbox-con-disabled")
+    }
+
+    function lightboxEvent(event) {
+        lightbox.classList.toggle("lightbox-con-disabled")
+        console.log(event.target.src)
+
+        lightbox.querySelector('.lightbox-image').src = event.target.src
     }
 
     function retrieveProjectInfo(event) {
@@ -71,7 +84,7 @@ import { fetchData, postData } from "./modules/DataMiner.js";
             userSection.appendChild(currentUser);
             
         }
-            userSection.addEventListener("click", retrieveProjectInfo);
+            userSection.addEventListener("click", lightboxEvent);
     }
     
     // we can add a catch handler to a thenable if things go wrong during our data retrieval attempt
@@ -86,5 +99,7 @@ import { fetchData, postData } from "./modules/DataMiner.js";
     document.querySelectorAll('.nav-item a').forEach(
         (navButton) => {
             navButton.addEventListener('click', retrieveProjectInfo);
-        }); 
+        });
+
+    lightbox.addEventListener("click", closeLightbox)
 })();

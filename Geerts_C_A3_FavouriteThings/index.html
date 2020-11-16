@@ -13,19 +13,24 @@
 
 <body>
     <main id="app">
+        <section class="lightbox-con lightbox-con-disabled">
+            <img class="lightbox-image" src="" alt>
+        </section>
+        <header id="mainHeader">
         <h1 class="hidden">Carter's Favourites</h1>
-
+    
         <!-- this is an HTML component -->
         <nav class="main-nav">
             <ul>
                 <li class="nav-item">
                     <a href="#" id="1">Skiing</a></li>
 
-                <li class="nav-item"><a href="#" id="2">Video Editing</a></li>
+                <li class="nav-item"><a href="#" id="2">Editing</a></li>
                 <li class="nav-item"><a href="#" id="3">Gaming</a></li>
                 <li class="nav-item"><a href="#" id="4">Dogs</a></li>
             </ul>
         </nav>
+    </header>
         <!-- end component -->
 
         <!-- add a users section here -->
@@ -36,9 +41,10 @@
             <p class="user-role"></p> -->
         </section>
         <!-- end users section -->
+
     </main>
 
-    <footer></footer>
+    <footer>Carter Geerts • 2020</footer>
 
     <!-- template files here (these don't render) -->
     <template id="user-template">
@@ -53,6 +59,8 @@
             <p class="user-role"></p> -->
         </div>
     </template>
+
+    
     <!-- end templates -->
 
     <!-- script files always go here -->

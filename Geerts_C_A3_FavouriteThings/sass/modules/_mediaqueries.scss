@@ -1,8 +1,17 @@
-@media screen and (min-width: 480px) {
-    // whatever styles you need here
-    body { background-color:purple; }
+@media screen and (min-width: 768px) {
+    body { background-color:rgb(50, 55, 71); }
+    .user { flex: 1; }
+    .user img { max-width: 350px; }
 }
 
-// this is a SASS comment 
+@media screen and (min-width: 375px) {
+    body { background-color:rgb(50, 55, 71); }
+    .user { flex: 1; }
+    .user img { max-width: 350px; }
+}
 
-/* css comments work too */
+@media screen and (min-width: 0px) {
+    body { background-color:rgb(50, 55, 71); }
+    .user { flex: 1; }
+    .user img { max-width: 350px; }
+}

@@ -1,11 +1,13 @@
 footer {
     position: fixed;
     bottom: 0;
-    background-color: black;
+    background-color: rgb(5, 4, 24);
     width: 100%;
-    text-align: center;
+    text-align: end;
+    box-sizing: border-box;
     
-    @include addPadding(10px 0);
+    @include addPadding(10px);
 
     color: white;
 }
+
